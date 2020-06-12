@@ -19,7 +19,20 @@ import LandingPageAboveFold2Mobile from '../../assets/LandingPageAboveFold2_mobi
 import LandingPageAboveFold3Mobile from '../../assets/LandingPageAboveFold3_mobile.png'
 
 import LandingPageWalk from '../../assets/LandingPageWalk.png'
+
+import { ReactComponent as AlianzaLogo } from '../../assets/logos/alianza.svg'
+import { ReactComponent as GHCCLogo } from '../../assets/logos/ghcc.svg'
+import { ReactComponent as HHLogo } from '../../assets/logos/hh.svg'
+import { ReactComponent as NYCQ12Logo } from '../../assets/logos/nycq12.svg'
+import { ReactComponent as SCLogo } from '../../assets/logos/sc.svg'
+
+/*import AlianzaLogo from '../../assets/logos/alianza.png'
+import GHCCLogo from '../../assets/logos/ghcc.png'
+import NYCQ12Logo from '../../assets/logos/healthHarlem.png'
+import NYCHHLogo from '../../assets/logos/nycq12.png'
+import SurvivorCorpsLogo from '../../assets/logos/survivorCorps.png'*/
 import { ReactComponent as ColumbiaLogo } from '../../assets/columbia_logo.svg'
+
 import { ReactComponent as SageLogo } from '../../assets/sage_logo.svg'
 import { ReactComponent as Tablet } from '../../assets/tablet.svg'
 import { ReactComponent as TestTubes } from '../../assets/test_tubes.svg'
@@ -397,6 +410,7 @@ export const Intro: React.FunctionComponent<IntroProps> = ({}: IntroProps) => {
           <Container maxWidth="md">
             <div className={classes.content1TextDiv}>
               <h3>{t('home.text1')}</h3>
+              <AlianzaLogo  />
             </div>
           </Container>
         </div>
@@ -410,7 +424,6 @@ export const Intro: React.FunctionComponent<IntroProps> = ({}: IntroProps) => {
             <Grid item xs={12} md={6}>
               <div className={classes.labImageDiv}>
                 <img src={LandingPageWalk} alt="Lab" width="100%" />
-                <p className={classes.photographyNote}>{t('home.text2')}</p>
               </div>
             </Grid>
             <Grid item xs={12} md={6}>
@@ -537,10 +550,30 @@ export const Intro: React.FunctionComponent<IntroProps> = ({}: IntroProps) => {
                 </div>
               </Grid>
             </Grid>
+            hello1
           </div>
+          
+          <div style={{display: 'flex', justifyContent: 'space-between'}}>
+          <AlianzaLogo/>
+          <NYCQ12Logo />
+          <ColumbiaLogo />
+<AlianzaLogo></AlianzaLogo>
+            <SageLogo />
+          </div>
+       
+
+          
+ 
+        
+          <div style={{display: 'flex', justifyContent: 'space-around'}}>
+          <HHLogo  />
+          <SCLogo />
+
+        </div>
         </Container>
       </div>
       <div className={classes.fightTogetherDiv}>
+    
         <h2 className={classes.fightTogetherDivText}>{t('home.text18')}</h2>
         <Grid container justify="center" alignItems="center">
           <NavLink to="/eligibility" className={classes.navLink}>
